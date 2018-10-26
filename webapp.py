@@ -9,7 +9,7 @@ from flask import request
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '3141592653589793238462643383279502884197169399'
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/search', methods=['GET', 'POST'])
 def home():
     form = SearchForm()
     if form.validate_on_submit():
