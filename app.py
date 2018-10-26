@@ -21,7 +21,7 @@ def maper1(x,y,text):
     map1.add_child(fg)
 
     map1.save(outfile = 'map1.html')
-    shutil.copy('map1.html','/templates')
+    shutil.copy('map1.html','templates/')
 
 import tweepy
 from datetime import datetime, date, time, timedelta
@@ -54,7 +54,7 @@ def tweet_search(query):
 
 
 
-    maper.maper1(x, y, text)
+    maper1(x, y, text)
 
 
 def get_api():
@@ -78,7 +78,7 @@ from flask import request
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '3141592653589793238462643383279502884197169399'
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/home', methods=['GET', 'POST'])
 def home():
     form = SearchForm()
     if form.validate_on_submit():
