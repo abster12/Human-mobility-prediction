@@ -70,7 +70,6 @@ def get_api():
     return tweepy.API(auth)
 
 from flask import Flask, render_template, redirect, url_for
-from forms import SearchForm
 import requests
 import json
 import unicodedata
