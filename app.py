@@ -10,10 +10,8 @@ import folium
 import shutil,os
 
 def maper1(x,y,text):
-    x1 = (sum(x)/len(x))
-    y1 = (sum(y)/len(y))
 
-    map1=folium.Map(location=[x1,y1],zoom_start=1,tiles='Stamen Terrain')
+    map1=folium.Map(location=[1,1],zoom_start=1,tiles='Stamen Terrain')
 
     fg = folium.FeatureGroup('Tweets')
 
