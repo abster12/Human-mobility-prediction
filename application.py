@@ -47,9 +47,11 @@ def tweet_search(query):
         searched_tweets.extend(new_tweets)
 
     for tweet in searched_tweets:
+        print(tweet.coordinates)
         if tweet.coordinates is not None:
-            x.append(tweet.coordinates[0])
-            y.append(tweet.coordinates[1])
+
+            x.append(tweet['coordinates'][0])
+            y.append(tweet['coordinates'][1])
             text.append(tweet.text)
 
 
@@ -89,7 +91,7 @@ def home():
 def search(name):
     info = name
     tweet_search(info)
-    return render_template('map.html')
+    return render_template('map1.html')
 
 @app.route('/hello/<name>')
 def hello(name):
