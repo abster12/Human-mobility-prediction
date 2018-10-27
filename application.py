@@ -60,11 +60,11 @@ def tweet_search(query):
 
 
 def get_api():
-    consumer_key = '6gSZ5GDRI97IFLW0qctBvICeP'
-    consumer_secret = 'ybCcMEgL56RNoZHRM51nP4jAF8xrZeyjGUc7beODQkqAeHskMp'
+    consumer_key = ''
+    consumer_secret = ''
 
-    access_token = '2429275932-SjwISH2T0mBjFiyNEITBYLXiAyg8fOyCWaG7Zr6'
-    access_token_secret = 'QjUndYKfNtE5R2iker1ouFeNrEkk9iqwfmAwrDB86a27N'
+    access_token = ''
+    access_token_secret = ''
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
     auth.set_access_token(access_token, access_token_secret)
