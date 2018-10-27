@@ -12,3 +12,16 @@ This will help the rescue teams to collect all the people and help in recovery.
 #### Review of work done
 
 [Big Data in Natural Disaster Management: A Review](https://www.mdpi.com/2076-3263/8/5/165/pdf-vor)
+
+
+### Running the web app
+
+The webapp is made using flask and the maps are rendered using folium. This code is running fine on python 3.6 and does not run on python 3.7 due to incompatilibility of tweepy.
+
+To the webapp clone this repository and use the Twitter api keys that you have recieved in the ```get_api()``` and if no please register an app [here](https://developer.twitter.com/en/apply-for-access) and obtain the keys.
+
+Then enter 
+```python application.py``` 
+The web app will be live on a local server on ```/home``` .
+
+For a better understanding of flask and how to use the twitter api for different types of searches please take a look at the article by [Dilan Coss](https://nearsoft.com/blog/how-to-create-an-api-and-web-applications-with-flask/)
